@@ -1,0 +1,14 @@
+target
+.git
+.gitignore
+*.md
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode
+.idea
+*.iml
+logs
+*.log
+images
