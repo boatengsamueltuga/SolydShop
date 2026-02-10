@@ -40,9 +40,7 @@ RUN chown appuser:appgroup app.jar
 
 USER appuser
 
-# Expose port (Railway will override with PORT env var)
-EXPOSE ${PORT:-8080}
+# Railway will use PORT env var
+EXPOSE 8080
 
-# No healthcheck - let Railway handle it
-
-ENTRYPOINT ["sh", "-c", "java -Dserver.port=${PORT:-8080} -jar app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
