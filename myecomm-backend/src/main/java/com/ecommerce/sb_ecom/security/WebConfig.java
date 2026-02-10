@@ -24,6 +24,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                         "http://localhost:3000",
                         "http://localhost:5173",
+                        "https://solydshop-production-0bca.up.railway.app",
                         frontEndUrl
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
