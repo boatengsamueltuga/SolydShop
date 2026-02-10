@@ -144,7 +144,7 @@ public class WebSecurityConfig {
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/images/**").permitAll()
 
-                        // 🔥 EXPLICIT ADMIN DELETE
+                        //  EXPLICIT ADMIN DELETE
                         .requestMatchers(HttpMethod.DELETE, "/api/admin/products/**")
                         .hasRole("ADMIN")
 
